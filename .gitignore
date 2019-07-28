@@ -1,3 +1,6 @@
+# the data folder (file size too large to be stored on GitHub)
+data/
+
 # other stuff
 .DS_Store
 
