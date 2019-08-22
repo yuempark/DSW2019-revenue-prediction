@@ -27,6 +27,9 @@ For many businesses, only a small fraction of customers produce the majority of 
         * `train_v2.csv`
     * the directory also contains other large data files that are generated in the notebooks described below
 
+* `probability.ipynb`
+    * contains the code that performs the data exploration and feature engineering for the logistic regression probability model
+
 * `regression-model-feature-engineering.ipynb`
     * contains the code that performs the data exploration and feature engineering for the regression model
 
@@ -46,3 +49,6 @@ For many businesses, only a small fraction of customers produce the majority of 
 
 * `DSW-presentation.pdf`
     * brief slide deck used to present our project
+    
+* `submission.csv`
+    * final output of the model on the test data that was submitted to Kaggle
