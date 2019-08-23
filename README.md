@@ -15,7 +15,7 @@ Note: The duration of the workshop was short and taken in conjunction with ongoi
 
 ## Project Description
 
-For many businesses, only a small fraction of customers produce the majority of the revenue. Therefore, identifying these potentially revenue-generating customers is critical for developing effective marketing strategies. Our project used visitor data from the online Google Merchandise Store to predict future customer revenue. Given that the vast majority of visitors never purchase anything in the future, we used a two-model approach: first, a logistic regression was used to quantify the probability that a given customer would make a purchase in the future (which we refer to as `probability` in the files described below), and second, a random forest was used to estimate the amount of money that a given customer was going to spend under the assumption that they did make a purchase in the future (which we refer to as `regression` in the files described below). By multiplying these two values together, we were able to estimate the expected value of any given customer with an accuracy that approximates the best-performing models to date.
+For many businesses, only a small fraction of customers produce the majority of the revenue. Therefore, identifying these potentially revenue-generating customers is critical for developing effective marketing strategies. Our project used visitor data from the online Google Merchandise Store to predict future customer revenue. Given that the vast majority of visitors never purchase anything in the future, we used a two-model approach: first, a logistic regression was used to quantify the probability that a given customer would make a purchase in the future, and second, a random forest was used to estimate the amount of money that a given customer was going to spend under the assumption that they did make a purchase in the future. By multiplying these two values together, we were able to estimate the expected value of any given customer with an accuracy that approximates the best-performing models to date.
 
 ## Repository Organization
 
@@ -27,8 +27,9 @@ For many businesses, only a small fraction of customers produce the majority of 
         * `train_v2.csv`
     * the directory also contains other large data files that are generated in the notebooks described below
 
-* `probability.ipynb`
-    * contains the code that performs the data exploration and feature engineering for the logistic regression probability model
+* `single-model-approach.ipynb`
+    * contains the code for a single model approach that predicts fututre revenue using only a random forrest regressor for a subset of all visitors
+    * contains the code that performs the data exploration, feature engineering and the regression model
 
 * `regression-model-feature-engineering.ipynb`
     * contains the code that performs the data exploration and feature engineering for the regression model
@@ -49,6 +50,3 @@ For many businesses, only a small fraction of customers produce the majority of 
 
 * `DSW-presentation.pdf`
     * brief slide deck used to present our project
-    
-* `submission.csv`
-    * final output of the model on the test data that was submitted to Kaggle
